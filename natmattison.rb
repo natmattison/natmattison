@@ -7,9 +7,9 @@ require 'yaml'
 class Natmattison < Sinatra::Application
 
   get '/' do
-    @image_url, @image_link = get_image_url('natmattison')
-    @articles = get_articles()
-    slim :index
+    # @image_url, @image_link = get_image_url('natmattison')
+    # slim :index
+    File.read(File.join('public', 'index.html'))
   end
 
   def get_image_url(username)

@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>NatMat</title>
+		<meta charset="utf-8" />
+		<style>
+			body {
+				margin: 0px;
+				font-family: helvetica, arial, sans-serif;
+				color: white;
+				font-size: 24px;
+
+				/*background-image: url('https://dl.dropboxusercontent.com/s/r6dy3komehez1ov/natmat-goat-cropped.jpg?dl=0');*/
+				background-image: url('file:///Users/natmat/Dropbox/natmat-goat-cropped.JPG');
+				  
+			  /* Background image is centered vertically and horizontally at all times */
+			  background-position: center center;
+			  
+			  /* Background image doesn't tile */
+			  background-repeat: no-repeat;
+			  
+			  /* Background image is fixed in the viewport so that it doesn't move when 
+			     the content's height is greater than the image's height */
+			  background-attachment: fixed;
+			  
+			  /* This is what makes the background image rescale based
+			     on the container's size */
+			  background-size: cover;
+			  
+			  /* Set a background color that will be displayed
+			     while the background image is loading */
+			  background-color: #464646;
+
+			}
+			
+			a {
+				color: rgb(221, 221, 255);
+				text-decoration: none;
+			}
+
+			.content {
+				padding: 20px;
+				height: 667px;
+			}
+			
+			.image {
+				width: 100%;
+			}
+			
+			.info {
+			  position: absolute;
+			  bottom: 40%;
+			  left: 50%;
+			  padding: 10px;
+			  opacity: 1;
+		   	transition: opacity .3s ease-in-out;
+		   	-moz-transition: opacity .3s ease-in-out;
+		   	-webkit-transition: opacity .3s ease-in-out;
+			}
+			
+			.info-click {
+				opacity: 0.5;
+			}
+			
+			.overlay {
+				background-color: black;
+				width: 100%;
+				min-height: 100vh;
+				opacity: 0.6;
+		   	transition: opacity .3s ease-in-out;
+		   	-moz-transition: opacity .3s ease-in-out;
+		   	-webkit-transition: opacity .3s ease-in-out;
+   		}
+
+   		.overlay-click {
+      	opacity: 0;
+			}
+
+		@media only screen and (max-width: 767px) {
+		  body {
+		  	background-image: url('https://dl.dropboxusercontent.com/s/xoqpzwsu72qfx3g/natmat-goat-cropped-small.jpg?dl=0');
+		    /*background-image: url('file:///Users/natmat/Dropbox/natmat-goat-cropped-small.JPG');*/
+		  }
+		  
+		  .info {
+		  	left: 0px;
+		  }
+		}
+
+		</style>
+	</head>
+
+	<body>
+		<div class="overlay">
+		</div>
+		<div class="info">
+			<p>Nat Mattison</p>
+			<p>Software developer, formerly of <a href="http://www.nest.com">Nest</a> and <a href="http://www.myenergy.com">MyEnergy</a>.</p>
+			<p><a href="http://www.olin.edu">Olin College</a> c/o 2012.</p>
+		</div>
+	</body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+	var overlay = true;
+	$(window).click(function() {
+		if (overlay) {
+			$(".overlay").addClass("overlay-click");
+	  	$(".info").addClass("info-click");
+	  	overlay = false;
+		} else {
+			$(".overlay").removeClass("overlay-click");
+	  	$(".info").removeClass("info-click");
+	  	overlay = true;
+		}
+	});
+
+	</script>
+</html>
