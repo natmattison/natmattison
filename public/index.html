@@ -39,6 +39,10 @@
 				color: rgb(221, 221, 255);
 				text-decoration: none;
 			}
+			
+			p {
+				margin: 15px 0px;
+			}
 
 			.content {
 				padding: 20px;
@@ -77,6 +81,11 @@
    		.overlay-click {
       	opacity: 0;
 			}
+			
+			.icon {
+				height: 28px;
+				margin-left: -2px;
+			}
 
 		@media only screen and (max-width: 767px) {
 		  body {
@@ -99,9 +108,30 @@
 			<p>Nat Mattison</p>
 			<p>Software developer, formerly of <a href="http://www.nest.com">Nest</a> and <a href="http://www.myenergy.com">MyEnergy</a>.</p>
 			<p><a href="http://www.olin.edu">Olin College</a> c/o 2012.</p>
+			<p>San Francisco, California</p>
+			<div class='icon-group'>
+				<a href="http://twitter.com/natmattison">
+					<img class='icon' src="https://dl.dropboxusercontent.com/s/impciu23o85amfi/twitter-sm.png?dl=0/">
+				</a>
+				<a href="http://instagram.com/natmattison">
+					<img class='icon' src="https://dl.dropboxusercontent.com/s/0ukp5kpx2d3s358/instagram-sm.png?dl=0"/>
+				</a>
+				<a href="http://last.fm/user/natmattison">
+					<img class='icon' src="https://dl.dropboxusercontent.com/s/g0b8lhawkwj9di9/last-fm-sm.png?dl=0/">
+				</a>
+			</div>
 		</div>
 	</body>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+	  ga('create', 'UA-36524976-2', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script>
 	var overlay = true;
@@ -116,16 +146,6 @@
 	  	overlay = true;
 		}
 	});
-
-	</script>
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-36524976-2', 'auto');
-	  ga('send', 'pageview');
 
 	</script>
 </html>
