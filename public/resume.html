@@ -24,26 +24,24 @@
         margin: 0px;
       }
       
+      #content {
+        width: 75%;
+        margin: 10px auto;
+      }
+      
       #left {
         font-family: 'Open Sans', helvetica, arial, sans-serif;
         display: inline-block;
-        /*margin-top: 22px;*/
-        /*margin-left: 100px;*/
-        /*padding: 10px 50px;*/
         vertical-align: top;
-        width: 35%;
-        padding: 0px 40px 0px 0px;
-        /*margin: 0px 40px;*/
+        width: 40%;
+        /*padding: 0px 40px 0px 0px;*/
         font-size: 20px;
         min-width: 200px;
       }
 
       #right {
-        width: 55%;
-        /*width: 480px;*/
-        /*padding: 10px;*/
-        /*position: relative;*/
-        /*left: 140px;*/
+        width: 50%;
+        min-width: 400px;
         margin: 3px 0px;
         vertical-align: top;
         min-height: 500px;
@@ -65,7 +63,6 @@
         display: inline;
         font-size: 20px;
         font-style: italic;
-        /*min-width: 300px;*/
         font-family: 'Open Sans', helvetica, arial, sans-serif;
       }
       
@@ -87,15 +84,35 @@
       p {
         margin: 4px;
       }
-      
+
+    @media only screen and (max-width: 1000px) {
       #content {
-        width: 75%;
-        margin: 10px auto;
+        width: 100%;
+      }
+      
+      #left {
+        padding: 10px;
+      }
+      
+      #right {
+        padding: 10px;
+      }
+    }
+
+    @media only screen and (max-width: 400px) {
+      #left {
+        padding: 0px;
       }
 
-    @media only screen and (max-width: 750px) {
       #right {
-        left: 0px;
+        min-width: 300px;
+        padding: 0px;
+      }
+
+      #content {
+        /*margin: 5px auto;*/
+        margin: 10px;
+        width: 100%;
       }
     }
 
@@ -125,7 +142,7 @@
             <li class="hidden">Verified new features through integration tests and ad-hoc functional testing</li>
             <li class="hidden">Found, documented, investigated and solved bugs</li>
             <li class="hidden">Wrote internal tools for interacting with the services stack and scripts for common user and device actions, which aided in functional and load testing as well as development</li>
-            <li class="hidden">Provided technical support to developer program partners</li>
+            <li class="hidden">Provided technical support to third-party developer program partners</li>
           </ul>
         </div>
       </div>
