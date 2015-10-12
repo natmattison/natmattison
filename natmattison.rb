@@ -14,5 +14,10 @@ class Natmattison < Sinatra::Application
     File.read(File.join('public', 'resume.html'))
   end
 
+  get '/pdfresume' do
+    content_type :pdf
+    File.read(File.join('public', 'natmatresume.pdf'))
+  end
+
 end
 
