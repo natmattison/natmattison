@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <title>NatMat | Resume</title>
+    <title>Nat Mattison | Resume</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,8 +11,12 @@
         margin: 0px;
         color: #464646;
         font-family: 'Open Sans', helvetica, arial, sans-serif;
-        font-size: 24px;
+        font-size: 16px;
         background-color: white;
+      }
+      
+      p {
+        margin: 2px 0px;
       }
       
       a {
@@ -24,50 +28,51 @@
         margin: 0px;
       }
       
-      #content {
-        width: 75%;
-        margin: 10px auto;
-      }
-      
-      #left {
+      #top {
         font-family: 'Open Sans', helvetica, arial, sans-serif;
-        display: inline-block;
         vertical-align: top;
-        width: 40%;
-        /*padding: 0px 40px 0px 0px;*/
+        width: 940px;
+        margin: 10px auto;
         font-size: 20px;
-        min-width: 200px;
       }
 
-      #right {
-        width: 50%;
-        min-width: 400px;
-        margin: 3px 0px;
+      #content {
+        width: 940px;
+        margin: 10px auto;
         vertical-align: top;
         min-height: 500px;
+      }
+
+      .column {
+        width: 440px;
+        vertical-align: top;
         display: inline-block;
+        margin: 2px;
+      }
+
+      .col-left {
+
+      }
+      
+      .col-right {
+
       }
       
       .res-item {
-        padding: 0px 0px 20px 0px;
+        padding: 10px 0px 28px 0px;
+        border-top: 1px dotted #E4E4E4;
       }
       
       .res-title {
         font-size: 32px;
         display: inline;
         font-family: 'Open Sans', helvetica, arial, sans-serif;
-        ;
       }
       
       .res-dates {
         display: inline;
-        font-size: 20px;
         font-style: italic;
         font-family: 'Open Sans', helvetica, arial, sans-serif;
-      }
-      
-      .res-description {
-        font-size: 16px;
       }
       
       h2 {
@@ -80,39 +85,25 @@
         margin: 4px;
         color: #464646;
       }
-      
-      p {
-        margin: 4px;
-      }
 
-    @media only screen and (max-width: 1000px) {
-      #content {
-        width: 100%;
-      }
-      
-      #left {
-        padding: 10px;
-      }
-      
-      #right {
-        padding: 10px;
-      }
-    }
-
-    @media only screen and (max-width: 400px) {
-      #left {
-        padding: 0px;
-      }
-
-      #right {
-        min-width: 300px;
-        padding: 0px;
+    @media only screen and (max-width: 900px) {
+      #top {
+        width: 90%;
+        margin: 10px auto;
       }
 
       #content {
-        /*margin: 5px auto;*/
-        margin: 10px;
-        width: 100%;
+        width: 90%;
+        margin: 10px auto;
+        vertical-align: top;
+        min-height: 500px;
+      }
+
+      .column {
+        width: 90%;
+        vertical-align: top;
+        display: inline-block;
+        margin: 2px;
       }
     }
 
@@ -120,23 +111,26 @@
   </head>
 
   <body>
-  <div id="content">
-    <div id="left">
+    <div id="top">
       <h2>Nat Mattison</h2>
       <h5>natmattison AT gmail</h5>
-      <p>Ruby, Python, Javascript, MySQL, HTML/CSS, Amazon Web Services, Git, etc.</p>
-      <h5><a href="./pdfresume">View PDF</a></h5>
+      <h5><a href="./pdfresume">Portable Document Format</a></h5>
     </div>
-    <div id="right">
+    <div id="content">
       <div class="res-item">
-        <div class="res-title">
-          <a href="http://nest.com" target="_blank">Nest</a>
+        <div class="column col-left">
+          <div class="res-title">
+            <a href="http://nest.com" target="_blank">Nest</a>
+          </div>
+          <div class="res-dates">August 2013 - May 2015</div>
+          <p>Acquired by Google, February 2014</p>
+          <p>Services Integration Engineer (Nest)</p>
+          <p>Software Engineer III (Google)</p>
+          <p>Palo Alto, CA</p>
+          <p>Tech: Python, Ruby, Amazon Web Services, SQL, Puppet, Git</p>
         </div>
-        <div class="res-dates">August 2013 - May 2015</div>
-        <div class="res-description">
+        <div class="column col-right">
           <ul>
-            <li><i>Palo Alto, CA</i></li>
-            <li><i>Acquired by Google, February 2014</i></li>
             <li>Conducted testing, performance analysis, and qualification of backend web services, focused on Nest’s developer program and API</li>
             <li>Wrote internal tools for interacting with the services stack and scripts for common user and device actions, which aided in functional and performance testing as well as development</li>
             <li>Managed software builds and deployments of distributed development environments, which allowed teammates to qualify releases and integrate client and device software.</li>
@@ -147,27 +141,50 @@
         </div>
       </div>
       <div class="res-item">
-        <div class="res-title">
-          <a href="http://myenergy.com" target="_blank">MyEnergy</a>
+        <div class="column col-left">
+          <div class="res-title">
+            <a href="http://myenergy.com" target="_blank">MyEnergy</a>
+          </div>
+          <div class="res-dates">December 2012 - August 2013</div>
+          <p>Acquired by Nest, May 2013</p>
+          <p>Software Developer</p>
+          <p>Boston, MA</p>
+          <p>Tech: Ruby, Javascript, SQL, Redis, Git</p>
         </div>
-        <div class="res-dates">December 2012 - August 2013</div>
-        <div class="res-description">
+        <div class="column col-right">
           <ul>
-            <li><i>Boston, MA</i></li>
-            <li><i>Acquired by Nest, May 2013</i></li>
             <li>Development of various Ruby on Rails applications for display and comparison of consumers’ utility data, administrative/support tasks, and monitoring data acquisition</li>
             <li>Wrote algorithms for web scraping and classifying electric, gas, and water data across 200+ utility consumer websites</li>
           </ul>
         </div>
       </div>
       <div class="res-item">
-        <div class="res-title">
-          <a href="http://olin.edu" target="_blank">Olin College of Engineering</a>
+        <div class="column col-left">
+          <div class="res-title">
+            <a href="http://mobileaware.com" target="_blank">MobileAware</a>
+          </div>
+          <div class="res-dates">June 2012 - November 2012</div>
+          <p>Software Developer</p>
+          <p>Boston, MA</p>
+          <p>Tech: Node.js, HTML/CSS, Java</p>
         </div>
-        <div class="res-dates">August 2008 - May 2012</div>
-        <div class="res-description">
+        <div class="column col-right">
           <ul>
-            <li><i>Needham, MA</i></li>
+            <li>Wrote software for a variety of mobile website projects and hybrid applications</li>
+            <li>Implemented design mockups and feature specifications</li>
+          </ul>
+        </div>
+      </div>
+      <div class="res-item">
+        <div class="column col-left">
+          <div class="res-title">
+            <a href="http://olin.edu" target="_blank">Olin College of Engineering</a>
+          </div>
+        <div class="res-dates">August 2008 - May 2012</div>
+        <p>Needham, MA</p>
+        </div>
+        <div class="column col-right">
+          <ul>
             <li>B.S. Engineering with a concentration in computing</li>
             <li><a href="http://www.olin.edu/collaborate/scope/projects/2011_12/athenahealth" target="_blank">Senior capstone project</a> focused on mobile applications for healthcare providers</li>
             <li><a href="https://sites.google.com/site/lieutenantpigeonshfid/" target="_blank">Design project</a> of a mobile app for social 20-somethings</li>
@@ -175,7 +192,6 @@
         </div>
       </div>
     </div>
-  </div>
   </body>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -187,5 +203,4 @@
     ga('send', 'pageview');
 
   </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </html>
